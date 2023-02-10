@@ -2,8 +2,10 @@ import fastify from 'fastify'
 
 const app = fastify()
 
-app.listen({
+app
+  .listen({
     port: 3333,
-}).then(() => {
+  })
+  .then(() => {
     console.log('HTTP Server Running!')
-})
+  })
